@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		086E7B4426307BA9002AE05F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7B4326307BA9002AE05F /* Network.swift */; };
+		086E7B4426307BA9002AE05F /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7B4326307BA9002AE05F /* Database.swift */; };
+		086E7B4C26307C9D002AE05F /* hipo.json in Resources */ = {isa = PBXBuildFile; fileRef = 086E7B4B26307C9D002AE05F /* hipo.json */; };
 		08CDBB632630622E00499881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB622630622E00499881 /* AppDelegate.swift */; };
 		08CDBB652630622E00499881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB642630622E00499881 /* SceneDelegate.swift */; };
 		08CDBB672630622E00499881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB662630622E00499881 /* ViewController.swift */; };
@@ -16,6 +17,10 @@
 		08CDBB7A2630622F00499881 /* HipoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB792630622F00499881 /* HipoAppTests.swift */; };
 		08CDBB852630622F00499881 /* HipoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB842630622F00499881 /* HipoAppUITests.swift */; };
 		08CDBB96263062FA00499881 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB95263062FA00499881 /* Model.swift */; };
+		08FDB2D4263081AD0078A4D6 /* MemberTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDB2D3263081AD0078A4D6 /* MemberTableViewCell.swift */; };
+		08FDB2E1263094E30078A4D6 /* MemberTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDB2E0263094E30078A4D6 /* MemberTableView.swift */; };
+		08FDB2EC26309AC90078A4D6 /* CustomButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDB2EB26309AC90078A4D6 /* CustomButton.swift */; };
+		08FDB2F126309BDB0078A4D6 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08FDB2F026309BDB0078A4D6 /* Constants.swift */; };
 		37B6C899FEAFBC4F3B0CE54A /* Pods_HipoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C290617E1590E274E119070F /* Pods_HipoAppTests.framework */; };
 		9D191B980904F2BBACB071E7 /* Pods_HipoApp_HipoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB94289D93C09F46AF6682EE /* Pods_HipoApp_HipoAppUITests.framework */; };
 		EC69E5F82888170D3C355C8D /* Pods_HipoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C6656448D3AB80657C329F /* Pods_HipoApp.framework */; };
@@ -39,7 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		086E7B4326307BA9002AE05F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
+		086E7B4326307BA9002AE05F /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		086E7B4B26307C9D002AE05F /* hipo.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = hipo.json; sourceTree = "<group>"; };
 		08CDBB5F2630622E00499881 /* HipoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CDBB622630622E00499881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08CDBB642630622E00499881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -54,6 +60,10 @@
 		08CDBB842630622F00499881 /* HipoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipoAppUITests.swift; sourceTree = "<group>"; };
 		08CDBB862630622F00499881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CDBB95263062FA00499881 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		08FDB2D3263081AD0078A4D6 /* MemberTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableViewCell.swift; sourceTree = "<group>"; };
+		08FDB2E0263094E30078A4D6 /* MemberTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberTableView.swift; sourceTree = "<group>"; };
+		08FDB2EB26309AC90078A4D6 /* CustomButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButton.swift; sourceTree = "<group>"; };
+		08FDB2F026309BDB0078A4D6 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		12C6656448D3AB80657C329F /* Pods_HipoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		152DA5845427DB3E35C37AB4 /* Pods-HipoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoAppTests.release.xcconfig"; path = "Target Support Files/Pods-HipoAppTests/Pods-HipoAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		1C9AB7F274A3DF6532A22E50 /* Pods-HipoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoApp.debug.xcconfig"; path = "Target Support Files/Pods-HipoApp/Pods-HipoApp.debug.xcconfig"; sourceTree = "<group>"; };
@@ -96,6 +106,9 @@
 		086E7B3F26307B62002AE05F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				08FDB2D3263081AD0078A4D6 /* MemberTableViewCell.swift */,
+				08FDB2E0263094E30078A4D6 /* MemberTableView.swift */,
+				08FDB2EB26309AC90078A4D6 /* CustomButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -116,12 +129,20 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
-		086E7B4226307B8D002AE05F /* Network */ = {
+		086E7B4226307B8D002AE05F /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				086E7B4326307BA9002AE05F /* Network.swift */,
+				086E7B4326307BA9002AE05F /* Database.swift */,
 			);
-			path = Network;
+			path = Database;
+			sourceTree = "<group>";
+		};
+		086E7B5026307CAD002AE05F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				086E7B4B26307C9D002AE05F /* hipo.json */,
+			);
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		08CDBB562630622E00499881 = {
@@ -149,7 +170,8 @@
 		08CDBB612630622E00499881 /* HipoApp */ = {
 			isa = PBXGroup;
 			children = (
-				086E7B4226307B8D002AE05F /* Network */,
+				086E7B5026307CAD002AE05F /* Assets */,
+				086E7B4226307B8D002AE05F /* Database */,
 				086E7B4026307B6F002AE05F /* Model */,
 				086E7B3F26307B62002AE05F /* View */,
 				086E7B4126307B73002AE05F /* Controller */,
@@ -158,6 +180,7 @@
 				08CDBB6B2630622F00499881 /* Assets.xcassets */,
 				08CDBB6D2630622F00499881 /* LaunchScreen.storyboard */,
 				08CDBB702630622F00499881 /* Info.plist */,
+				08FDB2F026309BDB0078A4D6 /* Constants.swift */,
 			);
 			path = HipoApp;
 			sourceTree = "<group>";
@@ -312,6 +335,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				08CDBB6F2630622F00499881 /* LaunchScreen.storyboard in Resources */,
+				086E7B4C26307C9D002AE05F /* hipo.json in Resources */,
 				08CDBB6C2630622F00499881 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -440,11 +464,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				086E7B4426307BA9002AE05F /* Network.swift in Sources */,
+				086E7B4426307BA9002AE05F /* Database.swift in Sources */,
+				08FDB2D4263081AD0078A4D6 /* MemberTableViewCell.swift in Sources */,
 				08CDBB672630622E00499881 /* ViewController.swift in Sources */,
+				08FDB2E1263094E30078A4D6 /* MemberTableView.swift in Sources */,
+				08FDB2EC26309AC90078A4D6 /* CustomButton.swift in Sources */,
 				08CDBB632630622E00499881 /* AppDelegate.swift in Sources */,
 				08CDBB652630622E00499881 /* SceneDelegate.swift in Sources */,
 				08CDBB96263062FA00499881 /* Model.swift in Sources */,
+				08FDB2F126309BDB0078A4D6 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
