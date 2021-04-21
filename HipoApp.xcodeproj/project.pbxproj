@@ -1,0 +1,592 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		08CDBB632630622E00499881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB622630622E00499881 /* AppDelegate.swift */; };
+		08CDBB652630622E00499881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB642630622E00499881 /* SceneDelegate.swift */; };
+		08CDBB672630622E00499881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB662630622E00499881 /* ViewController.swift */; };
+		08CDBB6A2630622E00499881 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CDBB682630622E00499881 /* Main.storyboard */; };
+		08CDBB6C2630622F00499881 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 08CDBB6B2630622F00499881 /* Assets.xcassets */; };
+		08CDBB6F2630622F00499881 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 08CDBB6D2630622F00499881 /* LaunchScreen.storyboard */; };
+		08CDBB7A2630622F00499881 /* HipoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB792630622F00499881 /* HipoAppTests.swift */; };
+		08CDBB852630622F00499881 /* HipoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB842630622F00499881 /* HipoAppUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		08CDBB762630622F00499881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CDBB572630622E00499881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CDBB5E2630622E00499881;
+			remoteInfo = HipoApp;
+		};
+		08CDBB812630622F00499881 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08CDBB572630622E00499881 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 08CDBB5E2630622E00499881;
+			remoteInfo = HipoApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		08CDBB5F2630622E00499881 /* HipoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CDBB622630622E00499881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		08CDBB642630622E00499881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		08CDBB662630622E00499881 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		08CDBB692630622E00499881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		08CDBB6B2630622F00499881 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		08CDBB6E2630622F00499881 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		08CDBB702630622F00499881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CDBB752630622F00499881 /* HipoAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipoAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CDBB792630622F00499881 /* HipoAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipoAppTests.swift; sourceTree = "<group>"; };
+		08CDBB7B2630622F00499881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		08CDBB802630622F00499881 /* HipoAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HipoAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		08CDBB842630622F00499881 /* HipoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipoAppUITests.swift; sourceTree = "<group>"; };
+		08CDBB862630622F00499881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		08CDBB5C2630622E00499881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CDBB722630622F00499881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CDBB7D2630622F00499881 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08CDBB562630622E00499881 = {
+			isa = PBXGroup;
+			children = (
+				08CDBB612630622E00499881 /* HipoApp */,
+				08CDBB782630622F00499881 /* HipoAppTests */,
+				08CDBB832630622F00499881 /* HipoAppUITests */,
+				08CDBB602630622E00499881 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		08CDBB602630622E00499881 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				08CDBB5F2630622E00499881 /* HipoApp.app */,
+				08CDBB752630622F00499881 /* HipoAppTests.xctest */,
+				08CDBB802630622F00499881 /* HipoAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		08CDBB612630622E00499881 /* HipoApp */ = {
+			isa = PBXGroup;
+			children = (
+				08CDBB622630622E00499881 /* AppDelegate.swift */,
+				08CDBB642630622E00499881 /* SceneDelegate.swift */,
+				08CDBB662630622E00499881 /* ViewController.swift */,
+				08CDBB682630622E00499881 /* Main.storyboard */,
+				08CDBB6B2630622F00499881 /* Assets.xcassets */,
+				08CDBB6D2630622F00499881 /* LaunchScreen.storyboard */,
+				08CDBB702630622F00499881 /* Info.plist */,
+			);
+			path = HipoApp;
+			sourceTree = "<group>";
+		};
+		08CDBB782630622F00499881 /* HipoAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				08CDBB792630622F00499881 /* HipoAppTests.swift */,
+				08CDBB7B2630622F00499881 /* Info.plist */,
+			);
+			path = HipoAppTests;
+			sourceTree = "<group>";
+		};
+		08CDBB832630622F00499881 /* HipoAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				08CDBB842630622F00499881 /* HipoAppUITests.swift */,
+				08CDBB862630622F00499881 /* Info.plist */,
+			);
+			path = HipoAppUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		08CDBB5E2630622E00499881 /* HipoApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CDBB892630622F00499881 /* Build configuration list for PBXNativeTarget "HipoApp" */;
+			buildPhases = (
+				08CDBB5B2630622E00499881 /* Sources */,
+				08CDBB5C2630622E00499881 /* Frameworks */,
+				08CDBB5D2630622E00499881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = HipoApp;
+			productName = HipoApp;
+			productReference = 08CDBB5F2630622E00499881 /* HipoApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		08CDBB742630622F00499881 /* HipoAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CDBB8C2630622F00499881 /* Build configuration list for PBXNativeTarget "HipoAppTests" */;
+			buildPhases = (
+				08CDBB712630622F00499881 /* Sources */,
+				08CDBB722630622F00499881 /* Frameworks */,
+				08CDBB732630622F00499881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CDBB772630622F00499881 /* PBXTargetDependency */,
+			);
+			name = HipoAppTests;
+			productName = HipoAppTests;
+			productReference = 08CDBB752630622F00499881 /* HipoAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		08CDBB7F2630622F00499881 /* HipoAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 08CDBB8F2630622F00499881 /* Build configuration list for PBXNativeTarget "HipoAppUITests" */;
+			buildPhases = (
+				08CDBB7C2630622F00499881 /* Sources */,
+				08CDBB7D2630622F00499881 /* Frameworks */,
+				08CDBB7E2630622F00499881 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				08CDBB822630622F00499881 /* PBXTargetDependency */,
+			);
+			name = HipoAppUITests;
+			productName = HipoAppUITests;
+			productReference = 08CDBB802630622F00499881 /* HipoAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08CDBB572630622E00499881 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					08CDBB5E2630622E00499881 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					08CDBB742630622F00499881 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 08CDBB5E2630622E00499881;
+					};
+					08CDBB7F2630622F00499881 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 08CDBB5E2630622E00499881;
+					};
+				};
+			};
+			buildConfigurationList = 08CDBB5A2630622E00499881 /* Build configuration list for PBXProject "HipoApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 08CDBB562630622E00499881;
+			productRefGroup = 08CDBB602630622E00499881 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				08CDBB5E2630622E00499881 /* HipoApp */,
+				08CDBB742630622F00499881 /* HipoAppTests */,
+				08CDBB7F2630622F00499881 /* HipoAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		08CDBB5D2630622E00499881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDBB6F2630622F00499881 /* LaunchScreen.storyboard in Resources */,
+				08CDBB6C2630622F00499881 /* Assets.xcassets in Resources */,
+				08CDBB6A2630622E00499881 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CDBB732630622F00499881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CDBB7E2630622F00499881 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		08CDBB5B2630622E00499881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDBB672630622E00499881 /* ViewController.swift in Sources */,
+				08CDBB632630622E00499881 /* AppDelegate.swift in Sources */,
+				08CDBB652630622E00499881 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CDBB712630622F00499881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDBB7A2630622F00499881 /* HipoAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		08CDBB7C2630622F00499881 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				08CDBB852630622F00499881 /* HipoAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		08CDBB772630622F00499881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CDBB5E2630622E00499881 /* HipoApp */;
+			targetProxy = 08CDBB762630622F00499881 /* PBXContainerItemProxy */;
+		};
+		08CDBB822630622F00499881 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 08CDBB5E2630622E00499881 /* HipoApp */;
+			targetProxy = 08CDBB812630622F00499881 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		08CDBB682630622E00499881 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08CDBB692630622E00499881 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		08CDBB6D2630622F00499881 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				08CDBB6E2630622F00499881 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		08CDBB872630622F00499881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		08CDBB882630622F00499881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		08CDBB8A2630622F00499881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HipoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acs.HipoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		08CDBB8B2630622F00499881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HipoApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acs.HipoApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		08CDBB8D2630622F00499881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HipoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acs.HipoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HipoApp.app/HipoApp";
+			};
+			name = Debug;
+		};
+		08CDBB8E2630622F00499881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HipoAppTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acs.HipoAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/HipoApp.app/HipoApp";
+			};
+			name = Release;
+		};
+		08CDBB902630622F00499881 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HipoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acs.HipoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HipoApp;
+			};
+			name = Debug;
+		};
+		08CDBB912630622F00499881 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = HipoAppUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.acs.HipoAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = HipoApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		08CDBB5A2630622E00499881 /* Build configuration list for PBXProject "HipoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CDBB872630622F00499881 /* Debug */,
+				08CDBB882630622F00499881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CDBB892630622F00499881 /* Build configuration list for PBXNativeTarget "HipoApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CDBB8A2630622F00499881 /* Debug */,
+				08CDBB8B2630622F00499881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CDBB8C2630622F00499881 /* Build configuration list for PBXNativeTarget "HipoAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CDBB8D2630622F00499881 /* Debug */,
+				08CDBB8E2630622F00499881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		08CDBB8F2630622F00499881 /* Build configuration list for PBXNativeTarget "HipoAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				08CDBB902630622F00499881 /* Debug */,
+				08CDBB912630622F00499881 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08CDBB572630622E00499881 /* Project object */;
+}
