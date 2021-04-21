@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		086E7B4426307BA9002AE05F /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 086E7B4326307BA9002AE05F /* Network.swift */; };
 		08CDBB632630622E00499881 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB622630622E00499881 /* AppDelegate.swift */; };
 		08CDBB652630622E00499881 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB642630622E00499881 /* SceneDelegate.swift */; };
 		08CDBB672630622E00499881 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB662630622E00499881 /* ViewController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		086E7B4326307BA9002AE05F /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		08CDBB5F2630622E00499881 /* HipoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HipoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08CDBB622630622E00499881 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08CDBB642630622E00499881 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		086E7B3F26307B62002AE05F /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		086E7B4026307B6F002AE05F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				08CDBB95263062FA00499881 /* Model.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		086E7B4126307B73002AE05F /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				08CDBB662630622E00499881 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		086E7B4226307B8D002AE05F /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				086E7B4326307BA9002AE05F /* Network.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		08CDBB562630622E00499881 = {
 			isa = PBXGroup;
 			children = (
@@ -116,13 +149,15 @@
 		08CDBB612630622E00499881 /* HipoApp */ = {
 			isa = PBXGroup;
 			children = (
+				086E7B4226307B8D002AE05F /* Network */,
+				086E7B4026307B6F002AE05F /* Model */,
+				086E7B3F26307B62002AE05F /* View */,
+				086E7B4126307B73002AE05F /* Controller */,
 				08CDBB622630622E00499881 /* AppDelegate.swift */,
 				08CDBB642630622E00499881 /* SceneDelegate.swift */,
-				08CDBB662630622E00499881 /* ViewController.swift */,
 				08CDBB6B2630622F00499881 /* Assets.xcassets */,
 				08CDBB6D2630622F00499881 /* LaunchScreen.storyboard */,
 				08CDBB702630622F00499881 /* Info.plist */,
-				08CDBB95263062FA00499881 /* Model.swift */,
 			);
 			path = HipoApp;
 			sourceTree = "<group>";
@@ -165,7 +200,6 @@
 				A31ABE324DF3661E62A92A00 /* Pods-HipoAppTests.debug.xcconfig */,
 				152DA5845427DB3E35C37AB4 /* Pods-HipoAppTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -406,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				086E7B4426307BA9002AE05F /* Network.swift in Sources */,
 				08CDBB672630622E00499881 /* ViewController.swift in Sources */,
 				08CDBB632630622E00499881 /* AppDelegate.swift in Sources */,
 				08CDBB652630622E00499881 /* SceneDelegate.swift in Sources */,
