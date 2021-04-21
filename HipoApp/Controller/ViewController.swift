@@ -41,13 +41,21 @@ class ViewController: UIViewController {
         //Sort Button
         self.view.addSubview(sortButton)
         sortButton.configureWith(title: kTitle_sortMembers)
+        sortButton.addTarget(self, action: #selector(sortButtonTapped), for: .touchUpInside)
         
         configureConstraints()
+        
+        sorting(elements: database.lastNames(), char: "a")
     }
     
     @objc private func addButtonTapped() {
         database.addMember()
         tableView.reloadData()
+        sorting(elements: database.lastNames(), char: "a")
+    }
+    
+    @objc private func sortButtonTapped() {
+        
     }
     
     private func configureConstraints() {
@@ -67,6 +75,38 @@ class ViewController: UIViewController {
         header.snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(57)
+        }
+    }
+    
+    private func sorting(elements: [String], char: String) {
+        var names = elements
+        names.sort { (first, second) -> Bool in
+            
+            
+            // Step-1: Sort descending order with the amount of character in the strings
+            if first.numberOfOccurences(char: char) > second.numberOfOccurences(char: char) {
+                return true
+            } else if first.numberOfOccurences(char: char) < second.numberOfOccurences(char: char) {
+                return false
+                
+                
+                // Step-2: If they contain same amount for the char, sort with their lengths
+            } else {
+                if first.count > second.count {
+                    return true
+                } else if first.count < second.count {
+                    return false
+                    
+                    
+                    // Step-3: If they have same amount of the char and same lenght, sort them alphabetically
+                } else {
+                    return first.localizedCaseInsensitiveCompare(second) == .orderedAscending
+                }
+            }
+        }
+        
+        for i in names {
+            print("-->\(i)")
         }
     }
 }
@@ -91,7 +131,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
-// MARK: - Sorting
+// MARK: - Find Number of Occurences
 extension String {
     func numberOfOccurences(char: String) -> Int {
         return self.lowercased().components(separatedBy: char.lowercased()).count-1

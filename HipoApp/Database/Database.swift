@@ -31,6 +31,23 @@ class Database {
     func addMember() {
         let member = Member(name: "Ahmet Cemal Şahin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
         members.append(member)
+        
+        let member2 = Member(name: "Ahmet Cemal Şaahin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
+        members.append(member2)
+        
+        let member3 = Member(name: "Ahmet Cemal hin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
+        members.append(member3)
+        
+        let member4 = Member(name: "Ahmet Cemal mahin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
+        members.append(member4)
+    }
+    
+    func lastNames() -> [String] {
+        var lastNames = [String]()
+        for i in members {
+            lastNames.append(String(i.name.split(separator: " ").last!).lowercased())
+        }
+        return lastNames
     }
 
 }
