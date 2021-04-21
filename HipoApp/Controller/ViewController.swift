@@ -44,18 +44,15 @@ class ViewController: UIViewController {
         sortButton.addTarget(self, action: #selector(sortButtonTapped), for: .touchUpInside)
         
         configureConstraints()
-        
-        sorting(elements: database.lastNames(), char: "a")
     }
     
     @objc private func addButtonTapped() {
         database.addMember()
         tableView.reloadData()
-        sorting(elements: database.lastNames(), char: "a")
     }
     
     @objc private func sortButtonTapped() {
-        
+        sorting(elements: database.getLastNames(), char: "a")
     }
     
     private func configureConstraints() {
@@ -78,19 +75,23 @@ class ViewController: UIViewController {
         }
     }
     
+    
+    //
+    // THE SORTING ALGORITHM
+    //
     private func sorting(elements: [String], char: String) {
-        var names = elements
-        names.sort { (first, second) -> Bool in
+        var lastNames = elements
+        lastNames.sort { (first, second) -> Bool in
             
             
-            // Step-1: Sort descending order with the amount of character in the strings
+            // STEP-1: Sort descending order with the amount of the char in strings
             if first.numberOfOccurences(char: char) > second.numberOfOccurences(char: char) {
                 return true
             } else if first.numberOfOccurences(char: char) < second.numberOfOccurences(char: char) {
                 return false
                 
                 
-                // Step-2: If they contain same amount for the char, sort with their lengths
+                // STEP-2: If they contain same amount of the char, sort with their lengths
             } else {
                 if first.count > second.count {
                     return true
@@ -98,18 +99,21 @@ class ViewController: UIViewController {
                     return false
                     
                     
-                    // Step-3: If they have same amount of the char and same lenght, sort them alphabetically
+                    // STEP-3: If they have same amount of the char and have same length, sort them alphabetically
                 } else {
                     return first.localizedCaseInsensitiveCompare(second) == .orderedAscending
                 }
             }
         }
         
-        for i in names {
-            print("-->\(i)")
-        }
+        
+        // Reorder members list and reload table view
+        database.reorderBy(lastNames)
+        tableView.reloadData()
     }
 }
+
+
 
 
 // MARK: - TableView Functions
@@ -125,11 +129,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         return cell
     }
     
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        print("Tapped!")
-        print(tableView.rowHeight)
-    }
 }
+
+
 
 // MARK: - Find Number of Occurences
 extension String {
