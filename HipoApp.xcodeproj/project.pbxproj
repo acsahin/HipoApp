@@ -15,6 +15,9 @@
 		08CDBB7A2630622F00499881 /* HipoAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB792630622F00499881 /* HipoAppTests.swift */; };
 		08CDBB852630622F00499881 /* HipoAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB842630622F00499881 /* HipoAppUITests.swift */; };
 		08CDBB96263062FA00499881 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08CDBB95263062FA00499881 /* Model.swift */; };
+		37B6C899FEAFBC4F3B0CE54A /* Pods_HipoAppTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C290617E1590E274E119070F /* Pods_HipoAppTests.framework */; };
+		9D191B980904F2BBACB071E7 /* Pods_HipoApp_HipoAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB94289D93C09F46AF6682EE /* Pods_HipoApp_HipoAppUITests.framework */; };
+		EC69E5F82888170D3C355C8D /* Pods_HipoApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 12C6656448D3AB80657C329F /* Pods_HipoApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,15 @@
 		08CDBB842630622F00499881 /* HipoAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HipoAppUITests.swift; sourceTree = "<group>"; };
 		08CDBB862630622F00499881 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		08CDBB95263062FA00499881 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		12C6656448D3AB80657C329F /* Pods_HipoApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipoApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		152DA5845427DB3E35C37AB4 /* Pods-HipoAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoAppTests.release.xcconfig"; path = "Target Support Files/Pods-HipoAppTests/Pods-HipoAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		1C9AB7F274A3DF6532A22E50 /* Pods-HipoApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoApp.debug.xcconfig"; path = "Target Support Files/Pods-HipoApp/Pods-HipoApp.debug.xcconfig"; sourceTree = "<group>"; };
+		342AF6733D28803CC289C0A2 /* Pods-HipoApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoApp.release.xcconfig"; path = "Target Support Files/Pods-HipoApp/Pods-HipoApp.release.xcconfig"; sourceTree = "<group>"; };
+		8AAE04EEACDD11A96EEDFD5D /* Pods-HipoApp-HipoAppUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoApp-HipoAppUITests.release.xcconfig"; path = "Target Support Files/Pods-HipoApp-HipoAppUITests/Pods-HipoApp-HipoAppUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A31ABE324DF3661E62A92A00 /* Pods-HipoAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoAppTests.debug.xcconfig"; path = "Target Support Files/Pods-HipoAppTests/Pods-HipoAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C290617E1590E274E119070F /* Pods_HipoAppTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipoAppTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C57EB8A4B1245A9B4C3CF9EB /* Pods-HipoApp-HipoAppUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HipoApp-HipoAppUITests.debug.xcconfig"; path = "Target Support Files/Pods-HipoApp-HipoAppUITests/Pods-HipoApp-HipoAppUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		CB94289D93C09F46AF6682EE /* Pods_HipoApp_HipoAppUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HipoApp_HipoAppUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC69E5F82888170D3C355C8D /* Pods_HipoApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				37B6C899FEAFBC4F3B0CE54A /* Pods_HipoAppTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,6 +84,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D191B980904F2BBACB071E7 /* Pods_HipoApp_HipoAppUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +98,8 @@
 				08CDBB782630622F00499881 /* HipoAppTests */,
 				08CDBB832630622F00499881 /* HipoAppUITests */,
 				08CDBB602630622E00499881 /* Products */,
+				D9B9AEA7744ED6262A4983A1 /* Pods */,
+				63D25D9162CFF4F7DA65A100 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -128,6 +145,30 @@
 			path = HipoAppUITests;
 			sourceTree = "<group>";
 		};
+		63D25D9162CFF4F7DA65A100 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				12C6656448D3AB80657C329F /* Pods_HipoApp.framework */,
+				CB94289D93C09F46AF6682EE /* Pods_HipoApp_HipoAppUITests.framework */,
+				C290617E1590E274E119070F /* Pods_HipoAppTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D9B9AEA7744ED6262A4983A1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1C9AB7F274A3DF6532A22E50 /* Pods-HipoApp.debug.xcconfig */,
+				342AF6733D28803CC289C0A2 /* Pods-HipoApp.release.xcconfig */,
+				C57EB8A4B1245A9B4C3CF9EB /* Pods-HipoApp-HipoAppUITests.debug.xcconfig */,
+				8AAE04EEACDD11A96EEDFD5D /* Pods-HipoApp-HipoAppUITests.release.xcconfig */,
+				A31ABE324DF3661E62A92A00 /* Pods-HipoAppTests.debug.xcconfig */,
+				152DA5845427DB3E35C37AB4 /* Pods-HipoAppTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +176,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08CDBB892630622F00499881 /* Build configuration list for PBXNativeTarget "HipoApp" */;
 			buildPhases = (
+				0EA846D80DBA4E1300ED4AAA /* [CP] Check Pods Manifest.lock */,
 				08CDBB5B2630622E00499881 /* Sources */,
 				08CDBB5C2630622E00499881 /* Frameworks */,
 				08CDBB5D2630622E00499881 /* Resources */,
+				2AF49B11874DC4427116B6D7 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -152,6 +195,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08CDBB8C2630622F00499881 /* Build configuration list for PBXNativeTarget "HipoAppTests" */;
 			buildPhases = (
+				959E52A05ABB0273580D4DB4 /* [CP] Check Pods Manifest.lock */,
 				08CDBB712630622F00499881 /* Sources */,
 				08CDBB722630622F00499881 /* Frameworks */,
 				08CDBB732630622F00499881 /* Resources */,
@@ -170,9 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 08CDBB8F2630622F00499881 /* Build configuration list for PBXNativeTarget "HipoAppUITests" */;
 			buildPhases = (
+				978B1DA44D5473BC6928A0D5 /* [CP] Check Pods Manifest.lock */,
 				08CDBB7C2630622F00499881 /* Sources */,
 				08CDBB7D2630622F00499881 /* Frameworks */,
 				08CDBB7E2630622F00499881 /* Resources */,
+				4227F74DC65F13F0868B0896 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -251,6 +297,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0EA846D80DBA4E1300ED4AAA /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HipoApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		2AF49B11874DC4427116B6D7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HipoApp/Pods-HipoApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HipoApp/Pods-HipoApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HipoApp/Pods-HipoApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4227F74DC65F13F0868B0896 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HipoApp-HipoAppUITests/Pods-HipoApp-HipoAppUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-HipoApp-HipoAppUITests/Pods-HipoApp-HipoAppUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-HipoApp-HipoAppUITests/Pods-HipoApp-HipoAppUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959E52A05ABB0273580D4DB4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HipoAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		978B1DA44D5473BC6928A0D5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-HipoApp-HipoAppUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		08CDBB5B2630622E00499881 /* Sources */ = {
@@ -425,6 +574,7 @@
 		};
 		08CDBB8A2630622F00499881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1C9AB7F274A3DF6532A22E50 /* Pods-HipoApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -443,6 +593,7 @@
 		};
 		08CDBB8B2630622F00499881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 342AF6733D28803CC289C0A2 /* Pods-HipoApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -461,6 +612,7 @@
 		};
 		08CDBB8D2630622F00499881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A31ABE324DF3661E62A92A00 /* Pods-HipoAppTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -482,6 +634,7 @@
 		};
 		08CDBB8E2630622F00499881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 152DA5845427DB3E35C37AB4 /* Pods-HipoAppTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -503,6 +656,7 @@
 		};
 		08CDBB902630622F00499881 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C57EB8A4B1245A9B4C3CF9EB /* Pods-HipoApp-HipoAppUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -522,6 +676,7 @@
 		};
 		08CDBB912630622F00499881 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AAE04EEACDD11A96EEDFD5D /* Pods-HipoApp-HipoAppUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
