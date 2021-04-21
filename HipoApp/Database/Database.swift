@@ -12,11 +12,9 @@ class Database {
     var members = [Member]()
     
     
-    
     init() {
         loadMembers()
     }
-    
     
     
     private func loadMembers() {
@@ -33,7 +31,6 @@ class Database {
     }
     
     
-    
     func addMember() {
         let member = Member(name: "Ahmet Cemal Şahin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
         members.append(member)
@@ -47,8 +44,6 @@ class Database {
 //
 //        let member4 = Member(name: "Ahmet Cemal mahin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
 //        members.append(member4)
-        
-        
     }
     
     
@@ -72,5 +67,4 @@ class Database {
             }
         }
     }
-
 }
