@@ -11,8 +11,8 @@ import SnapKit
 class CustomButton: UIButton {
 
     func configureWith(title: String) {
-        layer.cornerRadius = CGFloat(25)
         
+        layer.cornerRadius = CGFloat(25)
         snp.makeConstraints { (make) in
             make.centerX.equalToSuperview()
             make.width.equalTo(285)
@@ -22,7 +22,6 @@ class CustomButton: UIButton {
         setTitle(title, for: .normal)
         tintColor = .white
         titleLabel?.font = UIFont(name: "Avenir-Light", size: 12)
-        
         
         if title == kTitle_sortMembers {
             backgroundColor = UIColor(named: kColor_SortButtonColor)

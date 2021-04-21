@@ -81,14 +81,14 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! MemberTableViewCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: kIdentifier_CellIdentifier, for: indexPath) as! MemberTableViewCell
         cell.configureCell(member: database.members[indexPath.row])
         return cell
     }
     
-//    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        print("Tapped!")
-//        print(tableView.rowHeight)
-//    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("Tapped!")
+        print(tableView.rowHeight)
+    }
 }
 

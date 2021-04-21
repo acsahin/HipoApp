@@ -10,6 +10,9 @@ import Foundation
 let kTitle_sortMembers = "SORT MEMBERS"
 let kTitle_addNewMember = "ADD NEW MEMBER"
 let kTitle_members = "Members"
+
+let kIdentifier_CellIdentifier = "cell"
+
 let kColor_MainBackgroundColor = "MainBackgroundColor"
 let kColor_SortButtonColor = "SortButtonColor"
 let kColor_AddButtonColor = "AddButtonColor"
