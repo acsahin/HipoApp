@@ -43,7 +43,6 @@ class ViewController: UIViewController {
         sortButton.configureWith(title: kTitle_sortMembers)
         
         configureConstraints()
-
     }
     
     @objc private func addButtonTapped() {
@@ -92,3 +91,9 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     }
 }
 
+// MARK: - Sorting
+extension String {
+    func numberOfOccurences(char: String) -> Int {
+        return self.lowercased().components(separatedBy: char.lowercased()).count-1
+    }
+}

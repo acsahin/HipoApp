@@ -32,4 +32,5 @@ class Database {
         let member = Member(name: "Ahmet Cemal Şahin", age: 25, location: "Istanbul", github: "acsahin", hipo: Hipo(position: "iOS Developer Intern", yearsInHipo: 0))
         members.append(member)
     }
+
 }
