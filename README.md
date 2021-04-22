@@ -3,8 +3,7 @@
 
 
 
-  This app is made for Hipo Internship Program
-  It is a full programmatically UIKit application
+  This app is made for Hipo Internship Program, it is a full programmatically UIKit application
 
 
 
