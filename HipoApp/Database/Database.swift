@@ -17,6 +17,7 @@ class Database {
     }
     
     
+    
     private func loadMembers() {
         if let url = Bundle.main.url(forResource: "hipo", withExtension: "json") {
             do {
@@ -29,6 +30,7 @@ class Database {
             }
         }
     }
+    
     
     
     func addMember() {
