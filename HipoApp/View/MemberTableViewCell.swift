@@ -24,6 +24,9 @@ class MemberTableViewCell: UITableViewCell {
         return container
     }()
     
+    private var nameLabel = UILabel()
+    private var imgView = UIImageView()
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         selectionStyle = .none
@@ -33,21 +36,22 @@ class MemberTableViewCell: UITableViewCell {
     func configureCell(member: Member) {
         
         //Cell Subviews
-        let nameLabel = UILabel()
         nameLabel.font = nameLabel.font.withSize(12)
         nameLabel.text = member.name
         nameLabel.textColor = .black
         
-        let imgView = UIImageView(image: UIImage(systemName: "arrow.right"))
+        imgView = UIImageView(image: UIImage(systemName: "arrow.right"))
         imgView.tintColor = .black
 
-        
-        
         addSubview(containerView)
         containerView.addSubview(nameLabel)
         containerView.addSubview(imgView)
-
         
+        makeConstraints()
+
+    }
+    
+    private func makeConstraints() {
         containerView.snp.makeConstraints { (make) in
             make.height.equalTo(50)
             make.width.equalToSuperview().offset(-30)
@@ -71,9 +75,7 @@ class MemberTableViewCell: UITableViewCell {
     
     override func prepareForReuse() {
         super.prepareForReuse()
-        for view in containerView.subviews {
-            view.removeFromSuperview()
-        }
+        nameLabel.removeFromSuperview()
     }
     
 }

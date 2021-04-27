@@ -125,8 +125,11 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: kIdentifier_CellIdentifier, for: indexPath) as! MemberTableViewCell
+        cell.prepareForReuse()
         cell.configureCell(member: database.members[indexPath.row])
+        
         return cell
+        	
     }
     
 }
