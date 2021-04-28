@@ -10,12 +10,12 @@ import SnapKit
 
 class ViewController: UIViewController {
 
-    private lazy var header: UILabel = UILabel()
-    private lazy var tableView: MemberTableView = MemberTableView()
-    private lazy var addButton: CustomButton = CustomButton()
-    private lazy var sortButton: CustomButton = CustomButton()
+    private lazy var header = UILabel()
+    private lazy var tableView = MemberTableView()
+    private lazy var addButton = CustomButton()
+    private lazy var sortButton = CustomButton()
     
-    private var database: Database = Database()
+    private var database = Database()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -26,6 +26,11 @@ class ViewController: UIViewController {
         self.view.addSubview(tableView)
         tableView.delegate = self
         tableView.dataSource = self
+        database.loadMembers {
+            self.tableView.reloadData()
+            self.addButton.isHidden = false
+            self.sortButton.isHidden = false
+        }
         
         //Header Text
         self.view.addSubview(header)
@@ -37,11 +42,13 @@ class ViewController: UIViewController {
         self.view.addSubview(addButton)
         addButton.configureWith(title: kTitle_addNewMember, backColor: UIColor(named: kColor_AddButtonColor)!)
         addButton.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
+        addButton.isHidden = true
         
         //Sort Button
         self.view.addSubview(sortButton)
         sortButton.configureWith(title: kTitle_sortMembers, backColor: UIColor(named: kColor_SortButtonColor)!)
         sortButton.addTarget(self, action: #selector(sortButtonTapped), for: .touchUpInside)
+        sortButton.isHidden = true
         
         configureConstraints()
     }
@@ -135,7 +142,10 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         cell.configureCell(member: database.members[indexPath.row])
         
         return cell
-        	
+    }
+    
+    func reloader() {
+        self.tableView.reloadData()
     }
     
 }
