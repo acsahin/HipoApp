@@ -35,12 +35,12 @@ class ViewController: UIViewController {
 
         //Add Button
         self.view.addSubview(addButton)
-        addButton.configureWith(title: kTitle_addNewMember)
+        addButton.configureWith(title: kTitle_addNewMember, backColor: UIColor(named: kColor_AddButtonColor)!)
         addButton.addTarget(self, action: #selector(addButtonTapped), for: .touchUpInside)
         
         //Sort Button
         self.view.addSubview(sortButton)
-        sortButton.configureWith(title: kTitle_sortMembers)
+        sortButton.configureWith(title: kTitle_sortMembers, backColor: UIColor(named: kColor_SortButtonColor)!)
         sortButton.addTarget(self, action: #selector(sortButtonTapped), for: .touchUpInside)
         
         configureConstraints()
@@ -57,10 +57,16 @@ class ViewController: UIViewController {
     
     private func configureConstraints() {
         sortButton.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.width.equalTo(285)
+            make.height.equalTo(50)
             make.bottom.equalTo(addButton.snp.top).inset(-15)
         }
         
         addButton.snp.makeConstraints { (make) in
+            make.centerX.equalToSuperview()
+            make.width.equalTo(285)
+            make.height.equalTo(50)
             make.bottom.equalToSuperview().inset(45)
         }
         
